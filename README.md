@@ -1,0 +1,80 @@
+# AUTO-CORRELATION-AND-PSD
+
+## **Aim**
+Write a program for **Autocorrelation** and **Power Spectral Density (PSD)** of signals in **Scilab** and verify the **Wiener–Khinchin relation**.
+
+---
+
+## **Equipments Needed**
+- Computer with **Intel i3 processor** (or higher)  
+- **Scilab** software
+
+---
+
+## **Theory**
+The **Wiener–Khinchin theorem** states that:  
+> The Power Spectral Density (PSD) of a wide-sense stationary random process is the **Fourier Transform** of its **autocorrelation function**.
+![WhatsApp Image 2025-11-29 at 13 18 25_f6de35dd](https://github.com/user-attachments/assets/974521a8-5606-4221-87fb-aacbcc76da81)
+
+
+This relationship bridges the **time-domain correlation** and **frequency-domain power** representations of a signal.
+
+---
+
+## **Algorithm**
+1. **Load or Define the Signal:** Input your time-domain signal.  
+2. **Compute Autocorrelation:** Calculate the autocorrelation function of the signal.  
+3. **Compute Power Spectral Density (PSD):**  
+   Estimate the PSD using either:  
+   - Fourier Transform of the autocorrelation function, or  
+   - Methods like Welch’s periodogram.  
+4. **Plot Results:** Visualize both the autocorrelation function and PSD.
+
+---
+
+## **Procedure**
+1. Refer to the algorithm and write the code for the experiment.  
+2. Open **Scilab** on your system.  
+3. Type your code in a **new editor**.  
+4. **Save** the file.  
+5. **Execute** the code.  
+6. If any errors occur, **debug and re-run** the program.  
+7. Verify the generated waveform using **tabulation** and **model waveform** comparison.
+
+---
+
+## **Program (Scilab Code)**
+
+```scilab
+clc
+clear all; 
+t=0:0.01:2*%pi;
+x=14*cos(2*t);
+subplot(3,2,1);
+plot(x);
+au=xcorr(x,x);
+subplot(3,2,2);
+plot(au);
+v=fft(au);
+subplot(3,2,3);
+plot(abs(v));
+fw=fft(x);
+subplot(3,2,4);
+plot(fw);
+fw2=(abs(fw)).^2;
+subplot(3,2,5);
+plot(fw2);
+```
+---
+## **Output:**
+<img width="1919" height="1199" alt="Auto Corelation" src="https://github.com/user-attachments/assets/10149828-335f-4775-a4ae-b1a6ce2f15b2" />
+
+
+
+
+---
+
+## **Result:**
+Thus the Autocorrelation and PSD are executed in Scilab and output is verified.
+
+---
