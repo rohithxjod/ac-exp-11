@@ -70,6 +70,7 @@ plot(fw2);
 <img width="1919" height="1199" alt="Auto Corelation" src="https://github.com/user-attachments/assets/10149828-335f-4775-a4ae-b1a6ce2f15b2" />
 
 
+![11 ac](https://github.com/user-attachments/assets/c1afd7e5-e987-46d0-84ad-b59b6496acf7)
 
 
 ---
