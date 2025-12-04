@@ -14,7 +14,8 @@ Write a program for **Autocorrelation** and **Power Spectral Density (PSD)** of 
 ## **Theory**
 The **Wiener–Khinchin theorem** states that:  
 > The Power Spectral Density (PSD) of a wide-sense stationary random process is the **Fourier Transform** of its **autocorrelation function**.
-![WhatsApp Image 2025-11-29 at 13 18 25_f6de35dd](https://github.com/user-attachments/assets/974521a8-5606-4221-87fb-aacbcc76da81)
+![WhatsApp Image 2025-12-04 at 13 14 40_a5e642fb](https://github.com/user-attachments/assets/bf519e21-3c27-4065-963b-6fdfd9b3b3a1)
+
 
 
 This relationship bridges the **time-domain correlation** and **frequency-domain power** representations of a signal.
